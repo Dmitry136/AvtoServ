@@ -1,0 +1,317 @@
+/* Шрифты с Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Jura:wght@400;700&family=Russo+One&display=swap');
+/* font-family: 'Arsenal', sans-serif;
+   font-family: 'Jura', sans-serif;
+   font-family: 'Russo One', sans-serif; */
+
+
+/* Обнуляющие стили */
+* {
+   padding: 0;
+   margin: 0;
+   border: 0;
+ }
+ 
+ *, *:before, *:after {
+   box-sizing: border-box;
+ }
+ 
+ :focus, :active {
+   outline: none;
+ }
+ 
+ a:focus, a:active {
+   outline: none;
+ }
+ 
+ nav, footer, header, aside {
+   display: block;
+ }
+ 
+ html, body {
+   height: 100%;
+   width: 100%;
+   font-size: 100%;
+   line-height: 1;
+   font-size: 14px;
+   -ms-text-size-adjust: 100%;
+   -moz-text-size-adjust: 100%;
+   -webkit-text-size-adjust: 100%;
+ }
+ 
+ input, button, textarea {
+   font-family: inherit;
+ }
+ 
+ input::-ms-clear {
+   display: none;
+ }
+ 
+ button {
+   cursor: pointer;
+ }
+ 
+ button::-moz-focus-inner {
+   padding: 0;
+   border: 0;
+ }
+ 
+ a, a:visited {
+   text-decoration: none;
+ }
+ 
+ a:hover {
+   text-decoration: none;
+ }
+ 
+ ul li {
+   list-style: none;
+ }
+ 
+ img {
+   vertical-align: top;
+ }
+ 
+ h1, h2, h3, h4, h5, h6 {
+   font-size: inherit;
+   font-weight: inherit;
+ }
+ /* ====================== */
+ body{
+   font-family: 'Arsenal', sans-serif;
+   font-size: 15px;
+   background: rgb(22,3,2);
+ }
+
+ .container{
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+ }
+ /* header */
+ .header{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+ }
+ .header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+ }
+
+ .header__logo{
+   color: rgba(197, 69, 69, 80%);
+   font-family: 'Jura', sans-serif;
+   font-size: 43px;
+   text-align: center;
+   font-weight: 700;
+   margin-left: 35px;
+   padding-bottom: 322px;
+ }
+ .header__logo p{
+   font-size: 25px;
+ }
+
+ .nav{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+ }
+ .nav__link{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 20px;
+    opacity: 0.8;
+    padding: 15px 0;
+    position: relative;
+    color: rgb(255, 255, 255);
+    transition: color .3s linear, box-shadow .3s linear;
+ }
+ .nav__link:hover{
+   border: 1px solid #fff;
+   background-color: rgb(255, 255, 255);
+   box-shadow: 2px 2px 5px #000 inset;
+   color: rgb(0, 0, 0);
+ }
+ .nav__link:first-child{
+  font-family: 'Jura', sans-serif;
+   margin-bottom: 100px;
+   font-size: 30px;
+ }
+ .nav__link:first-child:hover{
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+ }
+ .nav__link span{
+   color: rgba(197, 69, 69, 80%);
+ }
+
+ /* intro */
+ .intro{
+    display: flex;
+    flex-direction: column;
+    padding-top: 100px;
+    height: 800px;
+    background: url(../img/fon/XXXL.png)center no-repeat; 
+    background-size: cover;
+ }
+ .intro::before{
+  content: "";
+  display: block;
+  width: 1400px;
+  height: 3px;
+  margin: 20px auto 20px;
+  background-color: rgb(243, 241, 241);
+ }
+
+ .intro__inner{
+   width: 100%;
+   max-width: 400px;
+   z-index: 2;
+   margin-top: 70px;
+ }
+
+ .intro__title{
+  font-family: 'Russo One', sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 100px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  margin-left: 35px;
+ }
+ .intro__title span{
+   color: rgba(197, 69, 69, 80%);
+ }
+
+ /* buttom */
+ .buttom{
+   display: inline-block;
+   vertical-align: top;
+   padding: 14px 50px;
+   border: 3px solid rgb(243, 241, 241);
+   border-radius: 5px;
+   margin-left: 35px;
+
+   color: rgb(255, 255, 255);
+   font-size: 17px;
+   line-height: 21px;
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: 700;
+   transition: color .3s linear, box-shadow .3s linear, background-color .3s linear;
+ }
+ .buttom:hover{
+  border: 1px solid #fff;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 5px #000 inset;
+  color: rgb(0, 0, 0);
+ }
+/* ============================= */
+
+.section__header{
+  width: 100%;
+  max-width: 500px;
+  margin-top: 50px;
+  margin-left: 35px;
+}
+.section__title{
+  color: rgb(255, 255, 255);
+  font-family: 'Russo One', sans-serif;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+.section__title::after{
+  content: "";
+  display: block;
+  width: 1000px;
+  height: 3px;
+  margin: 10px auto 20px;
+  background-color: rgba(197, 69, 69, 80%);
+ }
+
+ .section__text{
+   color: rgb(255, 255, 255);
+   font-size: 20px;
+ }
+ .section__text span{
+   color: rgba(197, 69, 69, 80%);
+ }
+ /* services */
+.services{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.services__item{
+  width: 26%;
+  padding: 0 35px 40px 85px;
+  margin-bottom: 40px;
+  text-align: center;
+} 
+
+.services__icon{
+  border: 3px solid rgba(197, 69, 69, 80%);
+  border-radius: 7%;
+  padding: 15px 10px;
+}
+.services__text{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-top: 20px;
+}
+
+/* ================== */
+/* footer */
+.footer{
+  padding-top: 60px;
+}
+.footer::before{
+  content: "";
+  display: block;
+  width: 1400px;
+  height: 3px;
+  margin: 20px auto 20px;
+  background-color: rgb(243, 241, 241);
+ }
+.footer__inner{
+  position: relative; 
+  margin-left: 35px;
+}
+.footer__social{
+  position: absolute;
+  cursor: pointer; 
+}
+.footer__social a{
+  margin-bottom: 25px;
+  margin-left: 10px;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+}
+.footer__logo{
+  color: rgb(255, 255, 255);
+  position: absolute; 
+  width: 155px;
+  font-family: 'Jura', sans-serif;
+  font-size: 25px;
+  font-weight: 700;
+  padding-top: 55px;
+  text-align: center;
+}
+.footer__text{
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  line-height: 30px;
+  padding-left: 250px;
+}
+/* ======================== */
